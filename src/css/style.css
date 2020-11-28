@@ -115,8 +115,8 @@ header {
 }
 
 .reasons_item--disc {
-	background-color: blue;
+	width: 113px;
+	height: 113px;
+	background-color: #1eacc7;
+	border-radius: 100px;
 }
-
-
-
