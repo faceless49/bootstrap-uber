@@ -193,7 +193,7 @@ header {
 .mobile {
 	min-height: 864px;
 	padding: 48px 0 79px 0;
-	background: url('../img/')
+  background: url(../img/bg-2.png) center center/cover no-repeat;
 }
 .mobile .mobile_item {
 	position: relative;
@@ -254,10 +254,10 @@ header {
 .mobile_item_plus img {
 	display: block;
 }
-/*.choice {
- /* min-height: 800px;*/
+.choice {
+  min-height: 500px;
   background-color: black;
-  /*padding: 150px 0 135px 0;*/
+  padding-top: 57px;
   position: relative;
 }
 .choice_title {
@@ -270,9 +270,9 @@ header {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	position: absolute;
-
-
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
 }
 
-*/
