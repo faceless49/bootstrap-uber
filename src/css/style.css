@@ -2,15 +2,15 @@
   font-family: "Roboto", sans-serif;
 }
 nav {
-    position: fixed; /* * */
-    width: 100%; /* * */
-    height: 50px;
-    background-color: #212121;
-    z-index: 2; /* * */
+  position: fixed; /* * */
+  width: 100%; /* * */
+  height: 50px;
+  background-color: #212121;
+  z-index: 2; /* * */
 }
 header {
-    position: relative;
-    height: 50px; /* * */
+  position: relative;
+  height: 50px; /* * */
 }
 .menu {
   display: flex;
@@ -129,6 +129,7 @@ header {
 }
 
 .label {
+  position: relative;
   height: 24px;
   margin: 0 auto;
   width: 112px;
@@ -139,8 +140,10 @@ header {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
 }
 .title {
+  position: relative;
   margin-bottom: 0;
   margin-top: 38px;
   color: #222222;
@@ -148,14 +151,17 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  z-index: 2;
 }
 .subtitle {
-	margin-top: 19px;
-	color: #222222;
-	font-size: 17px;
-	font-weight: 400;
-	line-height: 21px;
-	text-align: center;
+  margin-top: 19px;
+  position: relative;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  z-index: 2;
 }
 .reasons .reasons_block {
   display: flex;
@@ -191,88 +197,111 @@ header {
   line-height: 21px;
 }
 .mobile {
-	min-height: 864px;
-	padding: 48px 0 79px 0;
+  min-height: 864px;
+  padding: 48px 0 79px 0;
   background: url(../img/bg-2.png) center center/cover no-repeat;
 }
 .mobile .mobile_item {
-	position: relative;
-	width: 320px;
-	height: 280px;
-	margin: 0 auto;
-	margin-bottom: 19px;
-	padding-top: 92px;
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
 }
 /*Сделать всё в сасс варианта из видео 20 минута
 */
 
 .mobile .row {
-	margin-top: 32px;
+  margin-top: 32px;
 }
 .mobile_item_1 {
-	background: url("../img/1.png") center center/cover no-repeat;
+  background: url("../img/1.png") center center/cover no-repeat;
 }
 .mobile_item_2 {
-	background: url("../img/2.png") center center/cover no-repeat;
+  background: url("../img/2.png") center center/cover no-repeat;
 }
 .mobile_item_3 {
-	background: url("../img/3.png") center center/cover no-repeat;
+  background: url("../img/3.png") center center/cover no-repeat;
 }
 .mobile_item_4 {
-	background: url("../img/4.png") center center/cover no-repeat;
+  background: url("../img/4.png") center center/cover no-repeat;
 }
 .mobile_item_5 {
-	background: url("../img/5.png") center center/cover no-repeat;
+  background: url("../img/5.png") center center/cover no-repeat;
 }
 .mobile_item_6 {
-	background: url("../img/6.png") center center/cover no-repeat;
+  background: url("../img/6.png") center center/cover no-repeat;
 }
 
 .mobile_item_subtitle {
-	color: #ffffff;
-	font-size: 24px;
-	font-weight: 400;
-	line-height: 31px;
-	text-transform: uppercase;
-	text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
 }
 .mobile_item_plus {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: absolute;
-	bottom: 35px;
-	left: 50%;
-	transform: translateX(-50%);
-	width: 26px;
-	height: 26px;
-	background-color: #000000;
-	margin: 0 auto;
-	border-radius: 100%;
-	cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
 }
 .mobile_item_plus img {
-	display: block;
+  display: block;
+}
+.label_white {
+  background-color: #ffffff;
+  color: black;
 }
 .choice {
-  min-height: 500px;
-  background-color: black;
-  padding-top: 57px;
+  min-height: 895px;
+  background-color: #070716;
+  padding: 57px 0 138px 0;
   position: relative;
 }
-.choice_title {
-		color: white;
+.title_white {
+  color: white;
 }
-.choice_subtitle {
-	color: white;
+.subtitle_white {
+  color: white;
+  z-index: 2;
+}
+.label_white {
+  background-color: white;
+		color: #000;
+
 }
 .choice_ability {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateX(-50%);
+		position: relative;
+		display: block;
+		margin: 56px auto 0 auto;
+		z-index: 2;
+  
 }
-
+.choice_descr {
+  text-align: center;
+		color: #222222;
+		font-size: 17px;
+		font-weight: 300
+		line-height: 24px;
+}
+.black {
+  position: absolute;
+		top: 0;
+		left: 0;
+		height: 499px;
+		width: 100%;
+		background-color: #070716;
+    z-index: 1;
+}
