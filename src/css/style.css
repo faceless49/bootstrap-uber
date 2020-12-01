@@ -77,6 +77,11 @@ header {
   margin-top: 19px;
   border-radius: 4px;
 }
+.subheader_btn:hover {
+	background-image: none;
+	background-color: #1eacc7;
+}
+
 .promo {
   min-height: 800px;
   background: url("../img/main-bg.png") center center/cover no-repeat;
@@ -117,6 +122,10 @@ header {
   width: 259px;
   height: 63px;
 }
+.promo_btn:hover {
+	background-image: none;
+	background-color: #1eacc7;
+}
 
 .reasons_item--disc {
   width: 113px;
@@ -151,7 +160,7 @@ header {
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  z-index: 2;
+
 }
 .subtitle {
   margin-top: 19px;
@@ -257,51 +266,82 @@ header {
   border-radius: 100%;
   cursor: pointer;
 }
-.mobile_item_plus img {
-  display: block;
+
+.mobile_item_plus:before {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 2px;
+	background-color: #1eacc7; 
+	transition: 0.3s all;
+}
+.mobile_item_plus:after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 2px;
+	height: 14px;
+	background-color: #1eacc7; 
+	transition: 0.3s all;
+}
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+background-color: pink;
+}
+
+.choice {
+	position: relative;
+	background: url(../img/bg-2.png) center center/cover no-repeat;
+	min-height: 895px;
+	padding: 57px 0 138px 0;
+}
+.choice .black {
+	background-color: #070716;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 499px;
+	width: 100%;
+	z-index: 1;
 }
 .label_white {
-  background-color: #ffffff;
-  color: black;
-}
-.choice {
-  min-height: 895px;
-  background-color: #070716;
-  padding: 57px 0 138px 0;
-  position: relative;
+	color: black;
+	background-color: white;
+	z-index: 2;
 }
 .title_white {
-  color: white;
+	color: white;
+	z-index: 2;
 }
 .subtitle_white {
-  color: white;
-  z-index: 2;
-}
-.label_white {
-  background-color: white;
-		color: #000;
-
+	color: white;
+	z-index: 2;
 }
 .choice_ability {
-		position: relative;
-		display: block;
-		margin: 56px auto 0 auto;
-		z-index: 2;
-  
+	display: block;
+	position: relative;
+	margin: 56px auto 0 auto;
+	z-index: 2;
 }
 .choice_descr {
-  text-align: center;
-		color: #222222;
-		font-size: 17px;
-		font-weight: 300
-		line-height: 24px;
+	text-align: center;
+	color: #222222;
+	font-size: 17px;
+	font-weight: 300;
+	line-height: 24px;
 }
-.black {
-  position: absolute;
-		top: 0;
-		left: 0;
-		height: 499px;
-		width: 100%;
-		background-color: #070716;
-    z-index: 1;
+.require {
+	padding: 68px 0 84px 0;
+}
+.require_block {
+	margin: 33px 0;
+}
+.require .require_nmb {
+	margin-bottom: 0px;
+}
+.require .require_title {
+	color: #1ca8c3;
+	font-size: 22px;
+	font-weight: 400;
 }
